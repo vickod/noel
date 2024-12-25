@@ -32,7 +32,9 @@ body{
     form{
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: auto;
+        justify-content: center;
+        align-items: center;
        
         #message{
             border-radius: 0.5rem;
@@ -40,8 +42,6 @@ body{
         }
         
         .form-btn{
-            display: flex;
-            justify-content: end;
             margin-top: 0.5rem;
 
             button{
@@ -110,4 +110,14 @@ body{
 }
 .names{
     font-weight: bold;
+}
+#message{
+    width: 500px;
+    height: 300px;
+}
+@media (max-width:640px) {
+    #message{
+       min-width: 300px;
+        width:100%;
+    }
 }
